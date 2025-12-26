@@ -1,0 +1,37 @@
+---
+import { Image } from "astro:assets";
+import heroImage from "../assets/hero-image.png";
+---
+
+<section class="w-full flex justify-center items-center">
+  <div
+    class="max-w-7xl w-full px-6 grid grid-cols-1 lg:grid-cols-2 items-center"
+  >
+    <div class="flex flex-col gap-4">
+      <p class="text-xl font-bold text-blue-500">Tech & Chill</p>
+      <h1 class="text-4xl lg:text-6xl font-bold tracking-tight text-slate-900">
+        Tecnología a nuestro propio ritmo
+      </h1>
+      <p class="text-gray-600 text-lg leading-relaxed max-w-md">
+        Hablamos de pipelines, automatización y eficiencia digital. Resolviendo
+        sistemas complejos al ritmo de un perezoso.
+      </p>
+      <div class="mt-4">
+        <a
+          href="/articles"
+          class="bg-blue-400 text-white px-6 py-3 rounded-lg font-medium shadow-md hover:bg-blue-700 transition-colors"
+        >
+          Explorar artículos
+        </a>
+      </div>
+    </div>
+
+    <div class="flex justify-center lg:justify-end">
+      <Image
+        src={heroImage}
+        alt="Imagen del perezoso"
+        class="w-full max-w-md drop-shadow-2xl"
+      />
+    </div>
+  </div>
+</section>

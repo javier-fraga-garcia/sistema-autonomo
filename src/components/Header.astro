@@ -1,0 +1,39 @@
+---
+import Logo from "./Logo.astro";
+---
+
+<header
+  class="w-full bg-white p-3 sm:px-28 shadow flex flex-row gap-2 justify-between items-center"
+>
+  <a href="/" class="flex flex-row justify-center items-center">
+    <Logo class="w-14" />
+    <p class="text-xl font-extrabold">
+      Sistema <span class="block">Autónomo</span>
+    </p>
+  </a>
+  <ul class="flex flex-row gap-4 h-full">
+    <a
+      href="/articles"
+      class="flex font-bold hover:text-blue-400 hover:underline hover:cursor-pointer text-xl transition"
+    >
+      <li>Artículos</li>
+    </a>
+    <a
+      href="/about"
+      class="flex font-bold hover:text-blue-400 hover:underline hover:cursor-pointer text-xl transition"
+    >
+      <li>Sobre Nosotros</li>
+    </a>
+    <a
+      href="/contact"
+      class="flex font-bold hover:text-blue-400 hover:underline hover:cursor-pointer text-xl transition"
+    >
+      <li>Contacto</li>
+    </a>
+  </ul>
+  <a
+    href="/subscribe"
+    class="bg-blue-400 p-2 text-xl font-bold text-white rounded-xl hover:cursor-pointer hover:bg-blue-700 transition"
+    >Suscribirse</a
+  >
+</header>
