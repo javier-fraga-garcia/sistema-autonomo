@@ -1,0 +1,28 @@
+:root {
+    --primary: #15803d; 
+    --primary-hover: #166534;
+    --secondary: #d97706;
+    --background-light: #f1f5f9;
+    --background-dark: #0f172a;
+    --surface-light: #ffffff;
+    --surface-dark: #1e293b;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Noto Sans", sans-serif;
+    background-color: var(--background-light);
+    min-height: 100vh;
+    min-width: 100%;
+    overflow-x: hidden;
+}
+
+.container {
+    margin: 1rem;
+    padding: 1rem 2rem;
+}
