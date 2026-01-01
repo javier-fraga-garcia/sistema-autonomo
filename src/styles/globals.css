@@ -6,6 +6,7 @@
     --background-dark: #0f172a;
     --surface-light: #ffffff;
     --surface-dark: #1e293b;
+    --muted: #64748b;
 }
 
 * {
@@ -20,9 +21,12 @@ body {
     min-height: 100vh;
     min-width: 100%;
     overflow-x: hidden;
+    display: flex;
+    flex-direction: column;
 }
 
 .container {
     margin: 1rem;
     padding: 1rem 2rem;
+    flex: 1;
 }

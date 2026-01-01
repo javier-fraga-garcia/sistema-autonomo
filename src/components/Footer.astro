@@ -1,0 +1,30 @@
+---
+import Logo from "./Logo.astro";
+const year = new Date().getFullYear();
+---
+
+<footer>
+  <Logo className="logo" />
+  <small>&copy; <span>{year}</span> Todos los derechos reservados</small>
+</footer>
+
+<style>
+  footer {
+    display: flex;
+    width: 100%;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+    gap: 1rem;
+
+    .logo {
+      height: 3rem;
+      width: 3rem;
+    }
+
+    small {
+      color: var(--muted);
+    }
+  }
+</style>
